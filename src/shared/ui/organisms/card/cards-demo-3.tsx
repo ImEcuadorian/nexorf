@@ -55,7 +55,7 @@ export const Skeleton = () => {
       animate(sequence, {
       repeat: Infinity,
       repeatDelay: 1,
-    });
+    } as any);
   }, []);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
