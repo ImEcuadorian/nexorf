@@ -30,21 +30,21 @@ const BusinessMegaMenu = ({isMobile = false}: BusinessMegaMenuProps) => {
             icon: <Home className="w-8 h-8 text-sky-500" />,       // azul cielo
             title: "Farmacias",
             description:
-                "Sistema integral para la gestión de inventario, ventas, compras, finanzas y más. Ideal para empresas que buscan automatización total.",
+                "Gestiona medicamentos, inventario y ventas con un sistema que facilita el control de stock, facturación y atención ágil al cliente.",
         },
         {
             href: "#",
             icon: <Wrench className="w-8 h-8 -mt-1 text-rose-600" />, // rojo intenso
             title: "Ferreterías",
             description:
-                "Punto de venta moderno para tiendas físicas con control de caja, inventario y ventas rápidas.",
+                "Controla productos, inventario y ventas en tu ferretería con herramientas que simplifican la facturación y el seguimiento de tus artículos.",
         },
         {
             href: "#",
             icon: <BookOpen className="w-8 h-8 text-amber-400" />,   // amarillo cálido
             title: "Educación",
             description:
-                "Plataforma para vender productos o servicios online con pasarelas de pago y panel de administración.",
+                "Organiza matrículas, pagos y servicios educativos con herramientas digitales que facilitan la gestión administrativa.",
         },
     ];
 
@@ -91,14 +91,14 @@ const BusinessMegaMenu = ({isMobile = false}: BusinessMegaMenuProps) => {
         >
             <button
                 className="text-sm font-medium hover:text-gray-200 transition"
-                aria-controls="services-menu"
+                aria-controls="business-menu"
                 aria-expanded={open}
             >
                 Negocios
             </button>
 
             <div
-                id="services-menu"
+                id="business-menu"
                 role="menu"
                 className={`absolute left-0 top-full mt-4 z-50 w-[550px] bg-white dark:bg-gray-900 rounded-lg shadow-2xl border border-gray-200 dark:border-gray-800 p-6 gap-6 text-sm transition-all duration-200 ${
                     open ? "opacity-100 visible" : "opacity-0 invisible"
